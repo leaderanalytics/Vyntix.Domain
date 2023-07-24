@@ -12,7 +12,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  project: 'Vyntix.Doman/Vyntix.Domain.csproj'
+  project: 'Vyntix.Domain/Vyntix.Domain.csproj'
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
