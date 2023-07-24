@@ -23,8 +23,8 @@
   </PropertyGroup>
 	
 	<PropertyGroup>
-		<RootNamespace>LeaderAnalytics.Vyntix.Model</RootNamespace>
-		<AssemblyName>LeaderAnalytics.Vyntix.Model</AssemblyName>
+		<RootNamespace>LeaderAnalytics.Vyntix.Domain</RootNamespace>
+		<AssemblyName>LeaderAnalytics.Vyntix.Domain</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
