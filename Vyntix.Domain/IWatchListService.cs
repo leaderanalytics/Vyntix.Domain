@@ -8,14 +8,14 @@ public interface IWatchListService : IDisposable
     Task<List<WatchListItem>> GetWatchListItemsAsync(int userID, int dataProviderID);
 
     [OperationContract]
-    Task<RowOpResult> DeleteWatchListItemAsync(WatchListItem watchListItem);
+    Task<Model.RowOpResult> DeleteWatchListItemAsync(WatchListItem watchListItem);
 
     [OperationContract]
-    Task<RowOpResult<WatchList>> ReplaceWatchList(WatchList watchList);
+    Task<Model.RowOpResult<WatchList>> ReplaceWatchList(WatchList watchList);
 
     [OperationContract]
     Task<int> SaveWatchListItemAsync(WatchListItem item);
 
     Task<List<WatchList>> GetWatchListGraphsForUser(int userID);
-    Task<RowOpResult> DeleteWatchList(WatchList wl);
+    Task<Model.RowOpResult> DeleteWatchList(WatchList wl);
 }

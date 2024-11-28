@@ -4,7 +4,7 @@ public interface IUserGroupsService
 {
     Task<Dictionary<int, int[]>> GetUserUserGroupsMap();
     Task<List<UserGroup>> GetAllUserGroups();
-    Task<RowOpResult<UserGroup>> SaveUserGroup(UserGroup userGroup);
+    Task<Model.RowOpResult<UserGroup>> SaveUserGroup(UserGroup userGroup);
     Task<List<UserGroup>> SearchUserGroups(string name);
-    Task<RowOpResult> DeleteUserGroup(UserGroup userGroup);
+    Task<Model.RowOpResult> DeleteUserGroup(UserGroup userGroup);
 }

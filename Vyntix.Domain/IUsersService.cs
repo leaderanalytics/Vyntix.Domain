@@ -16,7 +16,7 @@ public interface IUsersService : IDisposable
     Task<List<User>> GetUsers(int? id, bool activeOnly);
 
     [OperationContract]
-    Task<RowOpResult<User>> SaveUser(IUser user);
+    Task<Model.RowOpResult<User>> SaveUser(IUser user);
 
     [OperationContract]
     Task<AsyncResult> DeleteUserAsync(int userID);
@@ -34,8 +34,8 @@ public interface IUsersService : IDisposable
     Task SaveAndReplaceUserDataRoles(User user,int? dataProviderID, bool saveChanges = false);
 
     Task<User> GetAdminUser();
-    RowOpResult<IUser> LoadUserSettings(IUser user);
-    Task<RowOpResult<IUser>> SaveUserSettings(IUser user);
+    Model.RowOpResult<IUser> LoadUserSettings(IUser user);
+    Task<Model.RowOpResult<IUser>> SaveUserSettings(IUser user);
     Task<string> GetDatabaseVersion();
 
 }

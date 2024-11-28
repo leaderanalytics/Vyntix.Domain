@@ -6,7 +6,7 @@ public interface INativeFrequencyService : IDisposable
     Task<NativeFrequency> GetNativeFrequencyByNativeID(string nativeID, int dataProviderID);
     Task<NativeFrequency> GetOrCreateNativeFrequencyByNameAsync(string frequency, int dataProviderID);
     Task<NativeFrequency> CreateNativeFrequencyAsync(string frequency, int dataProviderID);
-    Task<RowOpResult> SaveNativeFrequencyAsync(NativeFrequency frequency);
+    Task<Model.RowOpResult> SaveNativeFrequencyAsync(NativeFrequency frequency);
     Task<AsyncResult> DeleteNativeFrequencyAsync(string nativeID, int dataProviderID);
     void deleteNativeFrequenciesForDataProvider(int dataProviderID);
     void createDefaultNativeFrequenciesForDataProvider(DataProvider dp);

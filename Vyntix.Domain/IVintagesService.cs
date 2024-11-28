@@ -8,7 +8,7 @@ public interface IVintagesService : IDisposable
     Task<bool> IsDupe(Vintage vd);
 
     [OperationContract]
-    Task<RowOpResult> SaveVintage(Vintage vintage, bool saveChanges = true);
+    Task<Model.RowOpResult> SaveVintage(Vintage vintage, bool saveChanges = true);
 
     [OperationContract]
     Task<DateTime?> GetMaxVintageDate(string symbol, int seriesDataProviderID, int dataProviderID);
